@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="header">
+        <h1>My Profile</h1>
+    </div>
+    <div class="profile-avatar">
+        <img src="images/avatar.png" style="width: 200px;" alt="User Avatar">
+        <div class="edit-icon" onclick="redirectToUpload()">
+            <img src="images/edit.png" style="width: 30px;" alt="Edit">
+        </div>
+    </div>
+    <div class="profile-content">
+        <div class="profile-info">
+            <h2>John Doe</h2>
+            <p>( mr_darkknight )</p>
+        </div>
+    </div>
+    <br>
+    <div class="profile-statistics">
+        <h1>Statistics</h1>
+        <button class="stat-button">. . .</button>
+        <button class="stat-button">. . .</button>
+        <button class="stat-button">. . .</button>
+        <br>
+        <button class="stat-button">. . .</button>
+        <button class="stat-button">. . .</button>
+        <button class="stat-button">. . .</button>
+        <br>
+        <br>
+        <button class="progress-button"onclick="redirectToProgress()">Review Progress</button>
+        <br>
+        <button class="settings-button" onclick="redirectToSettings()">Account Settings</button>
+    </div>
+
+    <script>
+        function redirectToUpload() {
+            window.location.href = '/upload';
+        }
+
+        function redirectToSettings() {
+            window.location.href = '/settings';
+        }
+
+        function redirectToProgress() {
+            window.location.href = '/progress';
+        }
+    </script>
+</body>
+</html>
